@@ -1,0 +1,207 @@
+/* 80s Neon Theme for Reveal.js */
+/* @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); */
+
+/* Root Variables */
+:root {
+
+    --background-primary: #130725;
+    --background-secondary: #1a1836;
+
+    --text-primary: #ffffff;
+    --text-muted: #ff79c6;
+    --text-accent: #00FFFF;
+
+    --heading-shadow: 0 0 1.25em;
+
+    --heading1-color: #FF00FF;
+    /* Neon Pink */
+    --heading2-color: #00FFFF;
+    /* Neon Blue */
+    --heading3-color: #00FF00;
+    /* Neon Green */
+    --heading4-color: #FFFF00;
+    /* Neon Yellow */
+    --heading5-color: #FF0000;
+    /* Neon Red */
+    --heading6-color: #8000FF;
+    /* Neon Purple */
+
+    --neon-pink: #FF00FF;
+    --neon-blue: #00FFFF;
+    --neon-green: #00FF00;
+    --neon-yellow: #FFFF00;
+    --neon-red: #FF0000;
+    --neon-purple: #8000FF;
+
+}
+
+/* General Layout */
+.reveal {
+    background: var(--background-primary);
+    color: var(--text-primary);
+    font-family: Arial, sans-serif;
+    /* 'Press Start 2P', monospace; */
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.reveal .slides {
+    background: var(--background-primary);
+}
+
+
+
+/* Headings */
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+    /*color: var(--text-accent);
+    text-shadow: var(--heading-shadow) var(--neon-blue); */
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.reveal h1 {
+    color: var(--heading1-color);
+    font-size: 3rem;
+    text-shadow: var(--heading-shadow)
+}
+
+.reveal h2 {
+    color: var(--heading2-color);
+    font-size: 2.5rem;
+    text-shadow: var(--heading-shadow)
+}
+
+.reveal h3 {
+    color: var(--heading3-color);
+    font-size: 2rem;
+    text-shadow: var(--heading-shadow)
+}
+
+.reveal h4 {
+    color: var(--heading4-color);
+    font-size: 1.75rem;
+    text-shadow: var(--heading-shadow)
+}
+
+.reveal h5 {
+    color: var(--heading5-color);
+    font-size: 1.5rem;
+    text-shadow: var(--heading-shadow)
+}
+
+.reveal h6 {
+    color: var(--heading6-color);
+    font-size: 1.25rem;
+    text-shadow: var(--heading-shadow)
+}
+
+/* Paragraphs */
+.reveal p {
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    margin: 0 0 20px 0;
+}
+
+/* Links */
+.reveal a {
+    color: var(--neon-pink);
+    text-decoration: underline;
+}
+
+.reveal a:hover {
+    color: var(--neon-yellow);
+    text-shadow: 0 0 0.5em var(--neon-yellow);
+}
+
+/* Lists */
+.reveal ul,
+.reveal ol {
+    padding-left: 1.5em;
+    /* Ensures bullets remain positioned appropriately */
+    margin: 0 auto;
+    /* Optional: Center the list block if necessary */
+    width: 100%;
+    /* Ensures the list doesn't stretch unnecessarily */
+    text-align: left;
+}
+
+
+.reveal ul li,
+.reveal ol li {
+    margin: 5px 0;
+    color: var(--text-primary);
+    display: list-item;
+    line-height: 1.5;
+    /* Adjust line height for better spacing between items */
+}
+
+
+/* Code Blocks */
+.reveal code {
+    background: var(--background-secondary);
+    /*color: var(--neon-green);*/
+    padding: 0.2em 0.4em;
+    border-radius: 5px;
+    text-align: left;
+    /* Align text to the left */
+    margin: 0;
+    /* Remove default margins */
+}
+
+.reveal pre {
+    background: var(--background-secondary);
+    /*color: var(--neon-purple);*/
+    padding: 1em;
+    border-radius: 8px;
+    overflow: auto;
+    text-align: left;
+    /* Align text to the left */
+    margin: 0;
+    /* Remove default margins */
+}
+
+/* Blockquotes */
+.reveal blockquote {
+    border-left: 5px solid var(--neon-blue);
+    padding: 10px 20px;
+    background: var(--background-secondary);
+    color: var(--neon-yellow);
+    font-style: italic;
+}
+
+/* Navigation Controls */
+.reveal .controls {
+    background: var(--background-secondary);
+    color: var(--text-primary);
+}
+
+.reveal .controls button {
+    /* background: var(--neon-purple); */
+    color: var(--text-primary);
+    border: none;
+    padding: 0.5em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.reveal .controls button:hover {
+    background: var(--neon-pink);
+}
+
+/* Slide Transitions */
+.reveal .slide {
+    transition: all 0.5s ease;
+    box-shadow: 0 0 1em var(--neon-green);
+}
+
+/* Active Slide */
+.reveal .slide.present {
+    box-shadow: 0 0 2em var(--neon-blue);
+}
